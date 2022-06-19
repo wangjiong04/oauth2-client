@@ -37,7 +37,8 @@ public class ProjectConfig extends WebSecurityConfigurerAdapter {
                 .userInfoUri("http://auth-server:8080/user")
                 .clientName("client")
                 .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
-                .redirectUriTemplate("{baseUrl}/{action}/oauth2/code/{registrationId}")
+                .redirectUri("https://www.baidu.com")
+                //.redirectUriTemplate("{baseUrl}/{action}/oauth2/code/{registrationId}")
                 .build();
     }
 
